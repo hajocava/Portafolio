@@ -1,0 +1,26 @@
+[
+    {
+        "id": "one",
+        "project": "Project one",
+        "description": "Concept, Branding, UI",
+        "image": "one.jpg"
+    },
+    {
+        "id": "two",
+        "project": "Project one",
+        "description": "Concept, Branding, UI",
+        "image": "two.jpg"
+    },
+    {
+        "id": "three",
+        "project": "Project one",
+        "description": "Concept, Branding, UI",
+        "image": "three.jpg"
+    },
+    {
+        "id": "four",
+        "project": "Project one",
+        "description": "Concept, Branding, UI",
+        "image": "four.jpg"
+    }
+]
