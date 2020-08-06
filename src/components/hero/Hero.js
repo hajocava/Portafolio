@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import WindowDimention from "../../WindowDimention";
+import WindowDimention from "../../functions/WindowDimention";
 import anime from "animejs";
 import "./styles.sass"
 
@@ -29,7 +29,7 @@ export default function Hero() {
       opacity: [0, 1],
       easing: "easeInOutQuad",
       duration: 800,
-      delay: 900,
+      delay: 1200,
     });
   }, []);
 

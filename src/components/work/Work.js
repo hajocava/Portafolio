@@ -9,10 +9,9 @@ export default function Work({ work }) {
     anime({
       targets: `.works .work.${work.id}`,
       opacity: [0, 1],
-      translateY: [50, 0],
-      duration: 2500,
+      duration: 2000,
       easing: "easeInOutExpo",
-      delay: 800
+      delay: 1200
     });
 
     setState(false);

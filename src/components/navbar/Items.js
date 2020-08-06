@@ -1,41 +1,39 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MenuContext } from "./Context";
 import anime from "animejs";
-import WindowDimention from "../../WindowDimention";
 
 export default function Items() {
+  const [state, setState] = useState(false);
   const { active, setActive } = useContext(MenuContext);
 
-  const { width } = WindowDimention();
-
   useEffect(() => {
+    const { innerWidth: width } = window;
+
     if (width < 768) {
       // Animations for mobile devices
       if (active) {
         anime({
           targets: ".items li",
           opacity: [0, 1],
-          translateY: [60, 0],
           easing: "easeInOutQuad",
           duration: 600,
           delay: function (el, i, l) {
-            return i * 100;
+            return i * 150;
           },
         });
       } else {
         anime({
           targets: ".items li",
           opacity: [1, 0],
-          translateY: [0, -60],
           easing: "easeInOutQuad",
-          duration: 1000,
+          duration: 1,
           delay: function (el, i, l) {
             return i * 50;
           },
         });
       }
-    } else {
+    } else if(!state) {
       // Animations for desktop
       anime({
         targets: ".items li",
@@ -43,10 +41,13 @@ export default function Items() {
         translateY: [-10, 0],
         easing: "easeInOutQuad",
         duration: 600,
-        delay: 1200
+        delay: 1200,
       });
     }
-  }, [active, width]);
+
+    setState(true);
+
+  }, [active, state]);
 
   return (
     <ul className={`items ${active && "active"}`}>

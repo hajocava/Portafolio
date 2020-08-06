@@ -47,9 +47,28 @@
             a
                 text-decoration: none
                 color: $title
+                position: relative
+                @include medium
+                    &.active::after
+                        width: 100%
+                        height: 2px
+                        background-color: $primary
+                        content: ''
+                        display: block
+                        position: absolute
+                        margin-top: 3px
+                        animation-name: changeWidth
+                        animation-duration: .5s
+                    
         @include medium
             margin-top: 0
             display: flex
             li:not(:last-child)
                 margin-right: 50px
                 margin-bottom: 0
+
+@keyframes changeWidth
+    0%
+        width: 0
+    100%
+        width: 100%
