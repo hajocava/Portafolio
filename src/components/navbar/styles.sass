@@ -7,31 +7,49 @@
     height: 80px
     width: 100vw
     background-color: $page
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    &.active
-        height: 100vh
+    .container
+        height: 100%
+        background-color: $page
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &.active
+            height: 100vh
+        @include medium
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
     .icon-burger
         position: absolute
         right: 30px
         top: 20px
+        @include medium
+            display: none !important
     .icons-social
         display: none
         &.active
-            display: block
+            display: flex
+            justify-content: center
         a:not(:last-child)
             margin-right: 25px
+        @include medium
+            display: block
     .items
         margin-top: 100px
         display: none
         &.active
             display: block
-    li
-        text-align: center
-        &:not(:last-child)
-            margin-bottom: 50px
-        a
-            text-decoration: none
-            color: $title
+        li
+            text-align: center
+            &:not(:last-child)
+                margin-bottom: 50px
+            a
+                text-decoration: none
+                color: $title
+        @include medium
+            margin-top: 0
+            display: flex
+            li:not(:last-child)
+                margin-right: 50px
+                margin-bottom: 0
