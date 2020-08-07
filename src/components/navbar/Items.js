@@ -38,7 +38,6 @@ export default function Items() {
       anime({
         targets: ".items div li",
         opacity: [0, 1],
-        translateY: [-10, 0],
         easing: "easeInOutQuad",
         duration: 600,
         delay: 1200,

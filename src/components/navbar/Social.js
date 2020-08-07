@@ -12,7 +12,7 @@ export default function Social() {
     if (width < 768) {
       if (active) {
         anime({
-          targets: ".icons-social img",
+          targets: ".icons-social i",
           opacity: [0, 1],
           translateY: [-10, 0],
           easing: "easeInOutQuad",
@@ -20,7 +20,7 @@ export default function Social() {
         });
       } else {
         anime({
-          targets: ".icons-social img",
+          targets: ".icons-social i",
           opacity: [1, 0],
           translateY: [0, -10],
           easing: "easeInOutQuad",
@@ -29,7 +29,7 @@ export default function Social() {
       }
     } else {
       anime({
-        targets: ".icons-social img",
+        targets: ".icons-social i",
         opacity: [0, 1],
         translateY: [-10, 0],
         easing: "easeInOutQuad",
@@ -49,28 +49,28 @@ export default function Social() {
         href="https://behance.net/hazielcastillo"
         target="_blank"
       >
-        <img src={require("../../images/behance-line.svg")} alt="" />
+        <i class="ri-behance-line"></i>
       </a>
       <a
         rel="noopener noreferrer"
         href="https://www.instagram.com/hatrixs/"
         target="_blank"
       >
-        <img src={require("../../images/instagram-line.svg")} alt="" />
+        <i class="ri-instagram-line"></i>
       </a>
       <a
         rel="noopener noreferrer"
         href="https://linkedin.com/in/haziel-castillo"
         target="_blank"
       >
-        <img src={require("../../images/linkedin-line.svg")} alt="" />
+        <i class="ri-linkedin-line"></i>
       </a>
       <a
         rel="noopener noreferrer"
         href="https://github.com/hajocava"
         target="_blank"
       >
-        <img src={require("../../images/github-line.svg")} alt="" />
+        <i class="ri-github-line"></i>
       </a>
     </div>
   );

@@ -23,7 +23,6 @@ export default function Navbar() {
             border="0"
           />
         </NavLink>
-
         <Items />
       </div>
     </nav>

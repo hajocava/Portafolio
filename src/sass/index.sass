@@ -28,15 +28,12 @@ body
     opacity: 1
     transition: opacity 300ms linear 150ms
 
-
 .fade-exit 
     opacity: 1
-
 
 .fade-exit.fade-exit-active 
     opacity: 0
     transition: opacity 150ms linear
-
 // -----------------
 
 .container
@@ -53,12 +50,15 @@ ul
   list-style: none
 
 p
-  line-height: 1.5em
+  line-height: 2em
+  color: $text
 
 h1
   font-size: 2em
 
-button
+button, .btn
+  text-decoration: none
+  display: inline-block
   background-color: $primary
   border: none
   padding: 12px 24px

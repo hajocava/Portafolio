@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import WindowDimention from "../../functions/WindowDimention";
 import anime from "animejs";
 import "./styles.sass"
@@ -25,7 +26,7 @@ export default function Hero() {
     });
 
     anime({
-      targets: "#hero p, #hero button",
+      targets: "#hero p, #hero .btn",
       opacity: [0, 1],
       easing: "easeInOutQuad",
       duration: 800,
@@ -42,7 +43,9 @@ export default function Hero() {
         {width < 768 ? "Hi" : "Hello~"}, I'm Haziel
       </h1>
       <p>System engineer, expert in web technologies, UI & UX Designer</p>
-      <button className="btn-secondary mt-2">Read More</button>
+      <NavLink exact to="/about" className="btn btn-secondary mt-2">
+        Read More
+      </NavLink>
     </div>
   );
 }
