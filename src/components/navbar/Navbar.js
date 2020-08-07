@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { MenuContext } from "./Context";
 import Burger from "./Burger";
 import Items from "./Items";
@@ -13,6 +14,16 @@ export default function Navbar() {
       <div className={`container ${active && "active"}`}>
         <Burger />
         <Social />
+        <NavLink exact to="/">
+          <img
+            id="logo-firma"
+            height="30"
+            src={require("../../images/firma.png")}
+            alt="Firma HC"
+            border="0"
+          />
+        </NavLink>
+
         <Items />
       </div>
     </nav>

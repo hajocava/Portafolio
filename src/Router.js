@@ -5,11 +5,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./views/Home";
 import About from "./views/About";
+import ScrollToTopButton from "./components/scrollToTop/ScrollToTop";
 
 export default () => (
   <MenuProvider>
     <BrowserRouter>
       <Navbar />
+      <ScrollToTopButton />
       <Route
         render={({ location }) => (
           <TransitionGroup>

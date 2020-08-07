@@ -66,18 +66,24 @@ button
   border-radius: 3px
   font-size: 14px
   cursor: pointer
+  transition: all .3s ease
+  &:focus
+    outline: none
   &.btn-secondary
     background-color: transparent
     border: 1px solid $primary
     color: $primary
+    @include medium
+      &:hover
+        background-color: $primary
+        color: #ffffff
 
 .scroll-to-top-icon
   cursor: pointer
   position: fixed
   bottom: 0
   right: 0
-  margin-right: 50
   opacity: 0
-  transition: opacity .5s ease
+  transition: opacity 1s ease
   &.visible
     opacity: 1

@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MenuContext } from "./Context";
+import anime from "animejs";
 
 export default function Burger() {
   const { active, setActive } = useContext(MenuContext);
+  const [state, setState] = useState(false);
 
   const styles = {
     icon: {
@@ -15,30 +17,91 @@ export default function Burger() {
       alignItems: "center",
       cursor: "pointer",
     },
-    lineOne: {
+    line: {
       width: "100%",
       height: 2,
       backgroundColor: "#555555",
-      transition: "all .3s ease",
-      transform: active && "translateY(3px) rotate(45deg)"
-    },
-    lineTwo: {
-      width: "100%",
-      height: 2,
-      backgroundColor: "#555555",
-      transition: "all .3s ease",
-      transform: active && "translateY(-5px) rotate(-45deg)"
     },
   };
+
+  useEffect(() => {
+    if (state) {
+      if (active) {
+        anime
+          .timeline({ loop: false })
+          .add({
+            targets: ".icon-burger span:nth-child(1)",
+            translateY: [0, 4],
+            easing: "easeInOutQuad",
+            duration: 150,
+          })
+          .add({
+            targets: ".icon-burger span:nth-child(1)",
+            rotate: 45,
+            easing: "easeInOutQuad",
+            duration: 150,
+          });
+
+        anime
+          .timeline({ loop: false })
+          .add({
+            targets: ".icon-burger span:nth-child(2)",
+            translateY: [0, -4],
+            easing: "easeInOutQuad",
+            duration: 150,
+          })
+          .add({
+            targets: ".icon-burger span:nth-child(2)",
+            rotate: -45,
+            easing: "easeInOutQuad",
+            duration: 150,
+          });
+      } else {
+        anime
+          .timeline({ loop: false })
+          .add({
+            targets: ".icon-burger span:nth-child(1)",
+            rotate: 0,
+            easing: "easeInOutQuad",
+            duration: 150,
+          })
+          .add({
+            targets: ".icon-burger span:nth-child(1)",
+            translateY: 0,
+            easing: "easeInOutQuad",
+            duration: 150,
+          });
+
+        anime
+          .timeline({ loop: false })
+          .add({
+            targets: ".icon-burger span:nth-child(2)",
+            rotate: 0,
+            easing: "easeInOutQuad",
+            duration: 150,
+          })
+          .add({
+            targets: ".icon-burger span:nth-child(2)",
+            translateY: 0,
+            easing: "easeInOutQuad",
+            duration: 150,
+          });
+      }
+    }
+
+    setState(true)
+  }, [active]);
 
   return (
     <div
       className="icon-burger"
-      onClick={() => setActive(!active)}
+      onClick={() => {
+        setActive(!active);
+      }}
       style={styles.icon}
     >
-      <span style={styles.lineOne} />
-      <span style={styles.lineTwo} />
+      <span id="burger-line" style={styles.line} />
+      <span id="burger-line-two" style={styles.line} />
     </div>
   );
 }

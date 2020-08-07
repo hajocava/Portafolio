@@ -33,10 +33,10 @@ export default function Items() {
           },
         });
       }
-    } else if(!state) {
+    } else if (!state) {
       // Animations for desktop
       anime({
-        targets: ".items li",
+        targets: ".items div li",
         opacity: [0, 1],
         translateY: [-10, 0],
         easing: "easeInOutQuad",
@@ -46,26 +46,27 @@ export default function Items() {
     }
 
     setState(true);
-
   }, [active, state]);
 
   return (
     <ul className={`items ${active && "active"}`}>
-      <li>
-        <NavLink exact to="/" onClick={() => setActive(false)}>
-          Work
-        </NavLink>
-      </li>
-      <li>
-        <NavLink exact to="/about" onClick={() => setActive(false)}>
-          About
-        </NavLink>
-      </li>
-      <li>
-        <NavLink exact to="/resume" onClick={() => setActive(false)}>
-          Resume
-        </NavLink>
-      </li>
+      <div>
+        <li>
+          <NavLink exact to="/" onClick={() => setActive(false)}>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/about" onClick={() => setActive(false)}>
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/resume" onClick={() => setActive(false)}>
+            Resume
+          </NavLink>
+        </li>
+      </div>
     </ul>
   );
 }

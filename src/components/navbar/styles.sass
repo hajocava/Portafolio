@@ -4,9 +4,11 @@
 .navbar
     position: fixed
     z-index: 2
-    height: 80px
+    height: 50px
     width: 100vw
     background-color: $page
+    @include medium
+        height: 80px
     .container
         height: 100%
         background-color: $page
@@ -14,58 +16,75 @@
         flex-direction: column
         justify-content: center
         align-items: center
+        position: relative
+        #logo-firma
+            position: absolute
+            left: 15px
+            top: 10px
+            @include medium
+                position: relative
+                left: 0
+                top: 0
         &.active
             height: 100vh
         @include medium
             flex-direction: row
             justify-content: space-between
             align-items: center
-    .icon-burger
-        position: absolute
-        right: 30px
-        top: 20px
-        @include medium
-            display: none !important
-    .icons-social
-        display: none
-        &.active
-            display: flex
-            justify-content: center
-        a:not(:last-child)
-            margin-right: 25px
-        @include medium
-            display: block
-    .items
-        margin-top: 100px
-        display: none
-        &.active
-            display: block
-        li
-            text-align: center
-            &:not(:last-child)
-                margin-bottom: 50px
-            a
-                text-decoration: none
-                color: $title
-                position: relative
+        .icon-burger
+            position: absolute
+            right: 10px
+            top: 5px
+            @include medium
+                display: none !important
+        .icons-social
+            display: none
+            &.active
+                display: flex
+                justify-content: center
+            a:not(:last-child)
+                margin-right: 25px
+            @include medium
+                display: block
+                width: 33.3333%
+        .items
+            display: none
+            margin-top: 50px
+            width: 100%
+            &.active
+                display: block
+            @include medium
+                margin-top: 0
+                width: 33.333%
+                display: flex
+                justify-content: flex-end
+            div
+                li
+                    text-align: center
+                    &:not(:last-child)
+                        margin-bottom: 50px
+                    a
+                        text-decoration: none
+                        color: $title
+                        position: relative
+                        @include medium
+                            &.active::after
+                                width: 100%
+                                height: 2px
+                                background-color: $primary
+                                content: ''
+                                display: block
+                                position: absolute
+                                margin-top: 3px
+                                animation-name: changeWidth
+                                animation-duration: .5s
+                            
                 @include medium
-                    &.active::after
-                        width: 100%
-                        height: 2px
-                        background-color: $primary
-                        content: ''
-                        display: block
-                        position: absolute
-                        margin-top: 3px
-                        animation-name: changeWidth
-                        animation-duration: .5s
-                    
-        @include medium
-            margin-top: 0
-            display: flex
-            li:not(:last-child)
-                margin-right: 50px
-                margin-bottom: 0
+                    margin-top: 0
+                    display: flex
+                    li:not(:last-child)
+                        margin-right: 50px
+                        margin-bottom: 0
 
 @keyframes changeWidth
     0%
