@@ -9,7 +9,7 @@ export default function Social() {
   useEffect(() => {
     const { innerWidth: width } = window;
 
-    if (width < 768) {
+    if (width < 992) {
       if (active) {
         anime({
           targets: ".icons-social i",
@@ -49,28 +49,28 @@ export default function Social() {
         href="https://behance.net/hazielcastillo"
         target="_blank"
       >
-        <i class="ri-behance-line"></i>
+        <i className="ri-behance-line"></i>
       </a>
       <a
         rel="noopener noreferrer"
         href="https://www.instagram.com/hatrixs/"
         target="_blank"
       >
-        <i class="ri-instagram-line"></i>
+        <i className="ri-instagram-line"></i>
       </a>
       <a
         rel="noopener noreferrer"
         href="https://linkedin.com/in/haziel-castillo"
         target="_blank"
       >
-        <i class="ri-linkedin-line"></i>
+        <i className="ri-linkedin-line"></i>
       </a>
       <a
         rel="noopener noreferrer"
         href="https://github.com/hajocava"
         target="_blank"
       >
-        <i class="ri-github-line"></i>
+        <i className="ri-github-line"></i>
       </a>
     </div>
   );

@@ -22,12 +22,14 @@
             left: 15px
             top: 10px
             @include medium
+                top: 25px
+            @include large
                 position: relative
                 left: 0
                 top: 0
         &.active
             height: 100vh
-        @include medium
+        @include large
             flex-direction: row
             justify-content: space-between
             align-items: center
@@ -36,6 +38,8 @@
             right: 10px
             top: 5px
             @include medium
+                top: 20px
+            @include large
                 display: none !important
         .icons-social
             display: none
@@ -44,7 +48,7 @@
                 justify-content: center
             a:not(:last-child)
                 margin-right: 25px
-            @include medium
+            @include large
                 display: block
                 width: 33.3333%
             a
@@ -58,7 +62,7 @@
             width: 100%
             &.active
                 display: block
-            @include medium
+            @include large
                 margin-top: 0
                 width: 33.333%
                 display: flex
@@ -72,7 +76,7 @@
                         text-decoration: none
                         color: $title
                         position: relative
-                        @include medium
+                        @include large
                             &.active::after
                                 width: 100%
                                 height: 2px
@@ -84,7 +88,7 @@
                                 animation-name: changeWidth
                                 animation-duration: .5s
                             
-                @include medium
+                @include large
                     margin-top: 0
                     display: flex
                     li:not(:last-child)

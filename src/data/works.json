@@ -1,21 +1,21 @@
 [
     {        
-        "project": "Project one",
-        "description": "Concept, Branding, UI",
+        "project": "Vinculación",
+        "description": "Landing page, UX / UI",
         "image": "one.jpg"
     },
     {        
-        "project": "Project one",
-        "description": "Concept, Branding, UI",
+        "project": "Dashboard",
+        "description": "Web system, Full development",
         "image": "two.jpg"
     },
     {        
-        "project": "Project one",
+        "project": "Trippme",
         "description": "Concept, Branding, UI",
         "image": "three.jpg"
     },
     {        
-        "project": "Project one",
+        "project": "Project four",
         "description": "Concept, Branding, UI",
         "image": "four.jpg"
     }

@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./views/Home";
 import About from "./views/About";
+import Project from "./views/Project";
 import ScrollToTopButton from "./components/scrollToTop/ScrollToTop";
 
 export default () => (
@@ -19,6 +20,7 @@ export default () => (
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
+                <Route exact path="/project/:project" component={Project} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>

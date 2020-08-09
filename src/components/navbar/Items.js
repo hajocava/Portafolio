@@ -10,7 +10,7 @@ export default function Items() {
   useEffect(() => {
     const { innerWidth: width } = window;
 
-    if (width < 768) {
+    if (width < 992) {
       // Animations for mobile devices
       if (active) {
         anime({
