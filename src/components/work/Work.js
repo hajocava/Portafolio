@@ -6,7 +6,7 @@ export default function Work({ work }) {
     <div className="work">
       <NavLink exact to={`/project/${work.project}`} >
         <img
-          src={require(`../../images/works/${work.image}`)}
+          src={require(`../../images/works/thumbs/${work.image}`)}
           alt={work.project}
           width="100%"
           style={{

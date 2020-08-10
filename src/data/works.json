@@ -2,21 +2,21 @@
     {        
         "project": "Vinculación",
         "description": "Landing page, UX / UI",
-        "image": "one.jpg"
+        "image": "besoft.png"
     },
     {        
         "project": "Dashboard",
         "description": "Web system, Full development",
-        "image": "two.jpg"
+        "image": "trippme.png"
     },
     {        
         "project": "Trippme",
         "description": "Concept, Branding, UI",
-        "image": "three.jpg"
+        "image": "dashboard.png"
     },
     {        
         "project": "Project four",
         "description": "Concept, Branding, UI",
-        "image": "four.jpg"
+        "image": "dashboard2.png"
     }
 ]
