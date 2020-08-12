@@ -6,6 +6,12 @@
         "video": "trippme.mp4"
     },
     {        
+        "project": "Besoft",
+        "description": "Web system, Full development",
+        "image": "no",
+        "video": "besoft.mp4"
+    },
+    {        
         "project": "Dashboard",
         "description": "Concept, Branding, UI",
         "image": "dashboard.png",
@@ -16,11 +22,5 @@
         "description": "Web system, Full development",
         "image": "dashboard.png",
         "video": "no"
-    },
-    {        
-        "project": "Besoft",
-        "description": "Web system, Full development",
-        "image": "no",
-        "video": "besoft.mp4"
     }
 ]

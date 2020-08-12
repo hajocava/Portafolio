@@ -6,22 +6,18 @@ import "./styles.sass";
 export default function Portafolio({ work }) {
   const { width } = WindowDimention();
   return (
-    <NavLink className="work" exact to={`/project/${work.project}`}>
+    <NavLink
+      style={{
+        height: width < 992 ? 300 : 400,
+      }}
+      className="work"
+      exact
+      to={`/project/${work.project}`}
+    >
       {work.video !== "no" ? (
-        <div
-          style={{
-            height: width < 992 ? 300 : 400,
-            width: "100%",
-            position: "relative",
-          }}
-        >
-          <video autoPlay loop muted>
-            <source
-              src={require(`../../video/${work.video}`)}
-              type="video/mp4"
-            />
-          </video>
-        </div>
+        <video autoPlay loop muted>
+          <source src={require(`../../video/${work.video}`)} type="video/mp4" />
+        </video>
       ) : (
         <img
           src={require(`../../images/works/${work.image}`)}
