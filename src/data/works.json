@@ -1,22 +1,26 @@
 [
     {        
-        "project": "Vinculación",
+        "project": "Trippme",
         "description": "Landing page, UX / UI",
-        "image": "besoft.png"
+        "image": "no",
+        "video": "trippme.mp4"
     },
     {        
         "project": "Dashboard",
+        "description": "Concept, Branding, UI",
+        "image": "dashboard.png",
+        "video": "no"
+    },
+    {        
+        "project": "dashboard",
         "description": "Web system, Full development",
-        "image": "trippme.png"
+        "image": "dashboard.png",
+        "video": "no"
     },
     {        
-        "project": "Trippme",
-        "description": "Concept, Branding, UI",
-        "image": "dashboard.png"
-    },
-    {        
-        "project": "Project four",
-        "description": "Concept, Branding, UI",
-        "image": "dashboard2.png"
+        "project": "Besoft",
+        "description": "Web system, Full development",
+        "image": "no",
+        "video": "besoft.mp4"
     }
 ]
