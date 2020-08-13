@@ -8,12 +8,14 @@ import About from "./views/About";
 import Project from "./views/Project";
 import ScrollToTopButton from "./components/scrollToTop/ScrollToTop";
 import NotFound from "./views/NotFound";
+import ScrollTopChangeRoute from "./functions/ScrollToTop";
 
 export default () => (
   <MenuProvider>
     <BrowserRouter>
       <Navbar />
       <ScrollToTopButton />
+      <ScrollTopChangeRoute />
       <Route
         render={({ location }) => (
           <TransitionGroup>
