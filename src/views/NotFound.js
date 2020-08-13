@@ -1,9 +1,13 @@
 import React from "react";
+import WindowDimention from "../functions/WindowDimention";
 
 export default function NotFound() {
+  const { width } = WindowDimention();
+
   return (
     <main>
-      <div style={{
+      <div
+        style={{
           position: "absolute",
           height: "100%",
           top: 0,
@@ -11,10 +15,17 @@ export default function NotFound() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center"
-      }}>
-        <img height="400px" src={require("../images/error404.svg")} alt="Error 404 page not found"/>
-        <h1>Oh no! Page not found.</h1>
+          justifyContent: "center",
+        }}
+      >
+        <img
+          style={{
+            height: width < 768 ? 230 : 300,
+          }}
+          src={require("../images/error404.svg")}
+          alt="Error 404 page not found"
+        />
+        <h1 className="text-center container">Oh no! Page not found.</h1>
       </div>
     </main>
   );
