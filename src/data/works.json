@@ -1,26 +1,26 @@
 [
     {        
         "project": "Trippme",
-        "description": "Landing page, UX / UI",
+        "description": "Concept, Branding, Mobile UI/UX",
         "image": "no",
         "video": "trippme.mp4"
     },
     {        
         "project": "Besoft",
-        "description": "Web system, Full development",
+        "description": "Landing Page",
         "image": "no",
         "video": "besoft.mp4"
     },
     {        
         "project": "Dashboard",
-        "description": "Concept, Branding, UI",
+        "description": "Web System, Full Development",
         "image": "dashboard.png",
         "video": "no"
     },
     {        
-        "project": "dashboard",
-        "description": "Web system, Full development",
-        "image": "dashboard.png",
-        "video": "no"
-    }
+        "project": "Dashboard",
+        "description": "Web System, Full Development",
+        "image": "no",
+        "video": "dashboard.mp4"
+    }    
 ]

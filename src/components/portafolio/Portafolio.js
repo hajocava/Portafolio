@@ -12,7 +12,7 @@ export default function Portafolio({ work }) {
       }}
       className="work"
       exact
-      to={`/project/${work.project}`}
+      to={`/project/${String(work.project).toLocaleLowerCase()}`}
     >
       {work.video !== "no" ? (
         <video autoPlay loop muted>

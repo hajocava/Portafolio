@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     anime({
-      targets: `.works .work-video`,
+      targets: `.works .work`,
       opacity: [0, 1],
       duration: 2000,
       easing: "easeInOutExpo",
