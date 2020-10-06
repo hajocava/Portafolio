@@ -14,22 +14,13 @@ export default function Portafolio({ work }) {
       exact
       to={`/project/${String(work.project).toLocaleLowerCase()}`}
     >
-      {work.video !== "no" ? (
-        <video autoPlay loop muted>
-          <source src={require(`../../video/${work.video}`)} type="video/mp4" />
-        </video>
-      ) : (
-        <img
-          src={require(`../../images/works/${work.image}`)}
-          alt={work.project}
-          loading="lazy"
-        />
-      )}
+      <img
+        src={require(`../../images/works/${work.image}`)}
+        alt={work.project}
+        loading="lazy"
+      />
       <div className="overlay">
-        <div className="text">
-          <h3>{work.project}</h3>
-          <p>{work.description}</p>
-        </div>
+        <h3>{work.project}</h3>
       </div>
     </NavLink>
   );
