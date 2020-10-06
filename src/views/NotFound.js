@@ -25,7 +25,7 @@ export default function NotFound() {
           src={require("../images/error404.svg")}
           alt="Error 404 page not found"
         />
-        <h1 className="text-center container">Oh no! Page not found.</h1>
+        <h1 className="container" style={{ textAlign: "center" }}>Oh no! Page not found.</h1>
       </div>
     </main>
   );

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Hero from "../components/hero/Hero";
 import data from "../data/works.json";
-import anime, { timeline } from "animejs";
+import anime from "animejs";
 import Portafolio from "../components/portafolio/Portafolio";
 
 export default function Home() {
