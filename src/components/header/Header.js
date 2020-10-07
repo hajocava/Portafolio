@@ -1,14 +1,11 @@
 import React from "react";
-import WindowDimention from "../../functions/WindowDimention";
 
 export default function Header({ image, alt }) {
-  const { width } = WindowDimention();
-
   return (
     <div
       className="header"
       style={{
-        height: width < 992 ? 200 : 500,
+        height: 300,
         position: "relative",
         display: "block",
         width: "100%"

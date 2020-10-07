@@ -89,8 +89,8 @@ export default function Burger() {
       }
     }
 
-    setState(true)
-    
+    setState(true);
+
     // eslint-disable-next-line
   }, [active]);
 

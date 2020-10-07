@@ -1,30 +1,31 @@
-import React, { useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { MenuContext } from "./Context";
 import Burger from "./Burger";
 import Items from "./Items";
-import Social from "./Social";
 import "./styles.sass";
 
 export default function Navbar() {
-  const { active } = useContext(MenuContext);
+  const [scroll, setScroll] = useState(window.pageYOffset);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.pageYOffset > 50) setScroll(window.pageYOffset);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
-      <div className={`container ${active && "active"}`}>
-        <Burger />
-        <Social />
-        <NavLink exact to="/">
-          <img
-            id="logo-firma"
-            height="30"
-            src={require("../../images/firma.png")}
-            alt="Firma HC"
-            border="0"
-          />
+    <nav className={`navbar ${scroll > 100 ? "shadow" : ""}`}>
+      <div className="container">
+        <NavLink exact to="/" id="logo">
+          <span className="text-primary">Haziel</span> Castillo
         </NavLink>
-        <Items />
+        <Burger />
       </div>
+      <Items />
     </nav>
   );
 }

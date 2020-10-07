@@ -1,14 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import WindowDimention from "../../functions/WindowDimention";
 import "./styles.sass";
 
 export default function Portafolio({ work }) {
-  const { width } = WindowDimention();
   return (
     <NavLink
       style={{
-        height: width < 992 ? 300 : 400,
+        height: 300,
       }}
       className="work"
       exact

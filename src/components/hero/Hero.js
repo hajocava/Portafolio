@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import WindowDimention from "../../functions/WindowDimention";
 import anime from "animejs";
-import "./styles.sass"
+import "./styles.sass";
 
 export default function Hero() {
-  const { width } = WindowDimention();
-
   useEffect(() => {
     // Wrap every letter in a span
     var textWrapper = document.querySelector(".ml12");
@@ -36,15 +33,10 @@ export default function Hero() {
 
   return (
     <div id="hero">
-      <h1
-        className="ml12"
-        style={{ textTransform: width < 768 ? "uppercase" : "capitalize" }}
-      >
-        {width < 768 ? "Hi" : "Hello~"}, I'm Haziel
-      </h1>
-      <p>System engineer, expert in web technologies, UI & UX Designer</p>
+      <h1 className="ml12">Welcome</h1>
+      <p>I am system engineer, expert in web technologies</p>
       <NavLink exact to="/about" className="btn btn-secondary mt-2">
-        Read More
+        About me
       </NavLink>
     </div>
   );
