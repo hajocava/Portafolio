@@ -2,7 +2,8 @@ import React, { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { MenuContext } from "./Context";
 import anime from "animejs";
-import SocialLinks from "../about/Social"
+import SocialLinks from "../about/Social";
+import resume from "../../resume.pdf"
 
 export default function Items() {
   const { active, setActive } = useContext(MenuContext);
@@ -30,9 +31,14 @@ export default function Items() {
         </NavLink>
       </li>
       <li className="item">
-        <NavLink exact to="/resume" onClick={() => setActive(false)}>
+        <a
+          rel="noopener noreferrer"
+          href={resume}
+          target="_blank"
+          onClick={() => setActive(false)}
+        >
           Resume
-        </NavLink>
+        </a>
       </li>
       <SocialLinks />
     </ul>

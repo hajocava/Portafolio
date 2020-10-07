@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import resume from "../../resume.pdf"
 import anime from "animejs";
 import SocialLinks from "./Social";
 
@@ -32,9 +32,14 @@ export default function Content() {
         I belive that success is waking up every day doing what I like the most.
       </p>
       <div className="d-flex flex-wrap align-items-center justify-content-between">
-        <NavLink exact to="/resume" className="btn mt-2">
+        <a
+          rel="noopener noreferrer"
+          href={resume}
+          target="_blank"
+          className="btn mt-2"
+        >
           Resume
-        </NavLink>
+        </a>
         <SocialLinks />
       </div>
     </div>
