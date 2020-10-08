@@ -2,21 +2,21 @@
     {        
         "project": "Dashboard",
         "link": "social-service",
-        "image": "social-service/Home.png"
+        "image": "social-service/thumblr.png"
     },
     {        
         "project": "Landing Page",
         "link": "besoft",
-        "image": "besoft/Home6.png"
+        "image": "besoft/thumblr.png"
     },
     {        
         "project": "UX & UI Concept Mobile App Design",
         "link": "trippme",
-        "image": "trippme/Home.png"
+        "image": "trippme/thumblr.png"
     },
     {        
         "project": "Entrepreneurship",
         "link": "smart-gloves",
-        "image": "smart-gloves/Home.png"
+        "image": "smart-gloves/thumblr.png"
     }    
 ]
