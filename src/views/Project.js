@@ -16,7 +16,7 @@ export default function Project() {
       </div>
       <div className="container">
         <img
-          src={require("../images/works/besoft/styleguide.svg")}
+          src={require("../images/works/besoft/styleguide.png")}
           alt="style guide"
           width="100%"
         />
@@ -24,7 +24,7 @@ export default function Project() {
       <div className="container">
         <h2>Captures</h2>
         <img
-          src={require("../images/works/besoft/page.png")}
+          src={require("../images/works/besoft/besoft.png")}
           alt="style guide"
           width="100%"
         />

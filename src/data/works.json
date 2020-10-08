@@ -1,18 +1,22 @@
 [
     {        
-        "project": "Trippme",
-        "image": "besoft/header.png"
-    },
-    {        
-        "project": "Besoft",
-        "image": "besoft/header.png"
-    },
-    {        
         "project": "Dashboard",
-        "image": "besoft/header.png"
+        "link": "social-service",
+        "image": "social-service/Home.png"
     },
     {        
-        "project": "Dashboard",
-        "image": "besoft/header.png"
+        "project": "Landing Page",
+        "link": "besoft",
+        "image": "besoft/Home6.png"
+    },
+    {        
+        "project": "UX & UI Concept Mobile App Design",
+        "link": "trippme",
+        "image": "trippme/Home.png"
+    },
+    {        
+        "project": "Entrepreneurship",
+        "link": "smart-gloves",
+        "image": "smart-gloves/Home.png"
     }    
 ]
