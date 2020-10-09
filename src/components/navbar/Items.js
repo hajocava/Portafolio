@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { MenuContext } from "./Context";
 import anime from "animejs";
 import SocialLinks from "../about/Social";
-import resume from "../../resume.pdf"
+import resume from "../../resume.pdf";
 
 export default function Items() {
   const { active, setActive } = useContext(MenuContext);
@@ -19,7 +19,7 @@ export default function Items() {
   }, []);
 
   return (
-    <ul className={`items ${active && "active"}`}>
+    <ul className={`items ${active && "active"}`} style={{ listStyle: "none" }}>
       <li className="item">
         <NavLink exact to="/" onClick={() => setActive(false)}>
           Home

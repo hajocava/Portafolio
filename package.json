@@ -10,10 +10,12 @@
     "bootstrap": "^4.5.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-compare-image": "^3.0.2",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
     "react-scroll": "^1.8.0",
+    "react-slick": "^0.27.11",
     "react-transition-group": "^4.4.1",
     "react-visibility-sensor": "^5.1.1"
   },

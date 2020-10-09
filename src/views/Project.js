@@ -1,10 +1,8 @@
 import React from "react";
-import Header from "../components/header/Header";
 
 export default function Project() {
   return (
     <main>
-      <Header image={require("../images/works/besoft/header.png")} alt="Project" />
       <div className="container reduce">
         <h2 className="text-center mt-5">Style Guide</h2>
         <p>

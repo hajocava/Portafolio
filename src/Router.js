@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./views/Home";
 import About from "./views/About";
 import Project from "./views/Project";
+import Service from "./views/Service"
 import ScrollToTopButton from "./components/scrollToTop/ScrollToTop";
 import NotFound from "./views/NotFound";
 import ScrollTopChangeRoute from "./functions/ScrollToTop";
@@ -23,6 +24,7 @@ export default () => (
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
+                <Route exact path="/project/social-service" component={Service} />
                 <Route exact path="/project/besoft" component={Project} />
                 <Route component={NotFound} />
               </Switch>
