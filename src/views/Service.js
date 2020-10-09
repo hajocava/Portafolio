@@ -20,8 +20,19 @@ export default function Service() {
 
   return (
     <main>
-      <div className="container mt-5 mt-md-0">
-        <div className="row mt-5">
+      <img
+        src={require("../images/works/social-service/portada.png")}
+        alt=""
+        width="100%"
+        height="auto"
+        style={{
+          maxHeight: "70vh",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
+      />
+      <div className="container">
+        <div className="row">
           <div className="col-12 col-md-6">
             <h2>Project vision</h2>
             <p>
