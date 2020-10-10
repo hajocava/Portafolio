@@ -50,7 +50,7 @@ h1
 h2
   font-size: 2em
 
-button, .btn
+.btn
   text-decoration: none
   display: inline-block
   background-color: $primary
@@ -67,13 +67,22 @@ button, .btn
     background-color: transparent
     border: 1px solid $primary
     color: $primary
-    @include medium
-      &:hover
-        background-color: $primary
-        color: #ffffff
+    &:not(.no-hover)
+      @include medium
+        &:hover
+          background-color: $primary
+          color: #ffffff
+
+.no-hover
+  hover: none
+  &:hover
+    hover: none
 
 .text-primary
   color: $primary
+
+.text-light
+  color: #ffffff
 
 .text-bold
   font-weight: bold
