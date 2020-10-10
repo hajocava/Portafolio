@@ -19,7 +19,7 @@ export default function Items() {
   }, []);
 
   return (
-    <ul className={`items ${active && "active"}`} style={{ listStyle: "none" }}>
+    <ul className={`items ${active && "active"}`} style={{ listStyle: "none", margin:0, padding: 0 }}>
       <li className="item">
         <NavLink exact to="/" onClick={() => setActive(false)}>
           Home
