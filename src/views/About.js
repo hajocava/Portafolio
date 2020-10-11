@@ -6,10 +6,12 @@ import Photo from "../components/about/Photo";
 export default function About() {
   return (
     <main id="about" className="container">
-      <Photo />
-      <div className="float-right">
-        <Title />
-        <Content />
+      <div className="mt-2">
+        <Photo />
+        <div className="float-right">
+          <Title />
+          <Content />
+        </div>
       </div>
     </main>
   );

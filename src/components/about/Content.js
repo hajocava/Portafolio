@@ -17,19 +17,16 @@ export default function Content() {
   return (
     <div className="content">
       <p>
-        Hey there! I'm Haziel Castillo, a programmer and designer of digital
-        products. I am currently doing my professional residencies in the
-        Technology of Morelia
+        Hey there! I'm systems engineer, a programmer and designer of digital products. I specialize in web development, mobile applications, UX & UI design.
       </p>
+
       <p>
-        I love creating new things and improving my skills. I like to be with
-        more intelligent people than me, to learn from them, as well as to add
-        value to those around me. When I'm not working, I find myself
-        exercising, playing drums, playing video games, or spending time with my
-        family.
+        I love creating new things, experimenting with new technologies and improving my skills. I like to be with more intelligent people than me, to learn from them, as well as to add value to those around me.
+        I currently work as a freelance developer, I also had the opportunity to work as a backend developer at Neodiko company. When I'm not working, I find myself exercising, playing music, playing video games, or spending time with my family.
       </p>
+
       <p>
-        I belive that success is waking up every day doing what I like the most.
+        I belive that <span className="text-primary">success</span> is waking up every day doing what I like the most.
       </p>
       <div className="d-flex flex-wrap align-items-center justify-content-between">
         <a
