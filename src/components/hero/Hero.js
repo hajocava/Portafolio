@@ -34,7 +34,7 @@ export default function Hero() {
   return (
     <div id="hero">
       <h1 className="ml12">Welcome</h1>
-      <p>I am system engineer, expert in web technologies</p>
+      <p>I am system engineer, expert in web technologies and full stack developer :)</p>
       <NavLink exact to="/about" className="btn btn-secondary mt-2">
         About me
       </NavLink>

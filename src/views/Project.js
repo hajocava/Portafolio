@@ -3,6 +3,17 @@ import React from "react";
 export default function Project() {
   return (
     <main>
+      <img
+          src={require("../images/works/besoft/header.png")}
+          alt=""
+          width="100%"
+          height="auto"
+          style={{
+            maxHeight: "60vh",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+        />
       <div className="container reduce">
         <h2 className="text-center mt-5">Style Guide</h2>
         <p>
@@ -10,6 +21,17 @@ export default function Project() {
           color. Where people the technological sense to the blue palette. In
           fact the competition and companies Related to the sector use this type
           of colors. To contrast, light colors were used.
+        </p>
+        <p>
+          You can see the final project already programmed for all devices in
+          the following{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://upbeat-goldberg-ca2d1d.netlify.app/"
+          >
+            link.
+          </a>
         </p>
       </div>
       <div className="container">

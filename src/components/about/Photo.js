@@ -25,7 +25,7 @@ export default function Photo() {
   return (
     <img
       id="img-profile"
-      src={require("./perfil.jpg")}
+      src={require("./image-profile.jpg")}
       alt="perfil"
     />
   );

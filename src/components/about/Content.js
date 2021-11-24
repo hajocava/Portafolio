@@ -22,7 +22,7 @@ export default function Content() {
 
       <p>
         I love creating new things, experimenting with new technologies and improving my skills. I like to be with more intelligent people than me, to learn from them, as well as to add value to those around me.
-        I currently work as a freelance developer, I also had the opportunity to work as a backend developer at Neodiko company. When I'm not working, I find myself exercising, playing music, playing video games, or spending time with my family.
+        I currently work as full stack developer in the company listo.mx, I also had the opportunity to work as a backend developer at Neodiko company. When I'm not working, I find myself exercising, playing music, playing video games, or spending time with my family.
       </p>
 
       <p>
