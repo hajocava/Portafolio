@@ -18,7 +18,7 @@ export default function Title() {
       rotateZ: [180, 0],
       duration: 800,
       easing: "easeOutExpo",
-      delay: (el, i) => 50 * i,
+      delay: (_, i) => 50 * i,
     });
 
   }, []);
@@ -26,7 +26,7 @@ export default function Title() {
   return (
     <h2 className="text-anime m-0" style={{ fontSize: "2rem"}}>
       <span className="text-wrapper">
-        <span className="letters">Nice to meet you</span>
+        <span className="letters">Sobre mi</span>
       </span>
     </h2>
   );

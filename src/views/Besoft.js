@@ -15,22 +15,18 @@ export default function Project() {
           }}
         />
       <div className="container reduce">
-        <h2 className="text-center mt-5">Style Guide</h2>
+        <h2 className="text-center mt-5">Guía de estilos</h2>
         <p>
-          The color combination arose from an analysis of the psychology of
-          color. Where people the technological sense to the blue palette. In
-          fact the competition and companies Related to the sector use this type
-          of colors. To contrast, light colors were used.
+        La combinación de colores surgió de un análisis de la psicología del color. Donde la gente el sentido tecnológico a la paleta azul. De hecho la competencia y empresas relacionadas con el sector utilizan este tipo de colores. Para el contraste se utilizaron colores claros.
         </p>
         <p>
-          You can see the final project already programmed for all devices in
-          the following{" "}
+          Puedes ver el proyecto final ya programado para todos los dispositivos en el siguiente{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://upbeat-goldberg-ca2d1d.netlify.app/"
           >
-            link.
+            enlace.
           </a>
         </p>
       </div>
@@ -42,21 +38,20 @@ export default function Project() {
         />
       </div>
       <div className="container">
-        <h2>Captures</h2>
+        <h2>Capturas</h2>
         <img
           src={require("../images/works/besoft/besoft.png")}
           alt="style guide"
           width="100%"
         />
         <p>
-          You can see the final project already programmed for all devices in
-          the following{" "}
+        Puedes ver el proyecto final ya programado para todos los dispositivos en el siguiente{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://upbeat-goldberg-ca2d1d.netlify.app/"
           >
-            link.
+            enlace.
           </a>
         </p>
       </div>

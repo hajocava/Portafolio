@@ -17,16 +17,17 @@ export default function Content() {
   return (
     <div className="content">
       <p>
-        Hey there! I'm systems engineer, a programmer and designer of digital products. I specialize in web development, mobile applications, UX & UI design.
+        Me encanta crear y aprender cosas nuevas. También me gusta trabajar con gente más inteligente que yo, para aprender de ellos, y aportar valor a los que me rodean.
       </p>
 
       <p>
-        I love creating new things, experimenting with new technologies and improving my skills. I like to be with more intelligent people than me, to learn from them, as well as to add value to those around me.
-        I currently work as full stack developer in the company listo.mx, I also had the opportunity to work as a backend developer at Neodiko company. When I'm not working, I find myself exercising, playing music, playing video games, or spending time with my family.
+        Actualemente me encuentro trabajando como engineering manager de una startup mexicana, llamada <a className="text-primary" target="_blank" rel="noopener noreferrer" href="https://truehome.com.mx">truehome by loft</a> dentro del mercado de compra y venta de inmuebles.
       </p>
 
+      <p>Entre mis funciones esta el liderar equipos, asegurar la calidad del software, implementar mejoras para el performance del sitio y buenas practicas, entrevistar futuros desarrolladores, así como entender las reglas del negocio.</p>
+
       <p>
-        I belive that <span className="text-primary">success</span> is waking up every day doing what I like the most.
+        Creo que el <span className="text-primary">éxito</span> es despertar cada día haciendo lo que mas te gusta, agregando valor a ti y a los que te rodean.
       </p>
       <div className="d-flex flex-wrap align-items-center justify-content-between">
         <a
@@ -35,7 +36,7 @@ export default function Content() {
           target="_blank"
           className="btn mt-2"
         >
-          Resume
+          Descargar CV
         </a>
         <SocialLinks />
       </div>

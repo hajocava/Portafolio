@@ -11,7 +11,7 @@ export default function Footer({ backgroundColor, color }) {
       }}
     >
       <div className="container" style={{ textAlign: "center", color }}>
-        <h3 className="m-0">Let's make the first contact</h3>
+        <h3 className="m-0">Contactame</h3>
         <div className="mt-4">
           <SocialLinks
             extraClass="no-hover"
@@ -24,8 +24,7 @@ export default function Footer({ backgroundColor, color }) {
           </a>
         </div>
         <p className="mt-4" style={{maxWidth: 400, textAlign: "center", margin: "0 auto"}}>
-          Looking for a developer who shows passion in their work? Interested in
-          working together? I would love to hear from you!
+        ¿Buscas un desarrollador que muestre pasión en su trabajo? ¿Interesado en trabajar juntos? ¡Me encantaría saber de ti!
         </p>
         <p className="mt-4">© {new Date().getFullYear()} Haziel Castillo</p>
       </div>

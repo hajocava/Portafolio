@@ -2,7 +2,6 @@ import React from "react";
 import YouTube from "react-youtube";
 import Footer from "../components/footer/Footer";
 import winDim from "../functions/WindowDImentions";
-import MyResponsivePie from "../components/charts/Pie";
 
 export default function SmartGloves() {
   const { width } = winDim();
@@ -24,21 +23,12 @@ export default function SmartGloves() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h2>Problematic</h2>
+              <h2>Historia</h2>
               <p>
-                During my studies I had a partner named Carlos, a deaf mute
-                person. Carlos is a very nice and friendly friend. Knowing him
-                was one of the most revealing experiences I have had, because he
-                showed me his lifestyle, and the struggles he experiences every
-                day, from discrimination, lack of opportunities and social
-                isolation from not being able to communicate with other people,
-                since in my country, there is no culture of learning an
-                inclusive language.
+              Durante mis estudios tuve un compañero llamado Carlos, una persona sordomuda. Carlos es un amigo muy agradable y simpático. Conocerlo fue una de las experiencias más reveladoras que he tenido, porque me mostró su estilo de vida, y las luchas que vive día a día, desde la discriminación, la falta de oportunidades y el aislamiento social al no poder comunicarse con otras personas, ya que en mi país, no existe una cultura de aprendizaje de un idioma inclusivo.
               </p>
               <p>
-                This is why I wanted to find a solution to this problem, and
-                with a couple of friends from school we decided to develop a
-                translate sign language.
+              Es por eso que quería encontrar una solución a este problema, y ​​con un par de amigos de la universidad, decidimos desarrollar un traductor de lenguaje de señas.
               </p>
             </div>
             <div className="col-12 mt-3">
@@ -57,44 +47,34 @@ export default function SmartGloves() {
 
           <div className="row">
             <div className="col-12 mt-4">
-              <h2>Description</h2>
+              <h2>Descripción</h2>
               <p>
-                It consists of a pair of gloves with sensors, capable of
-                obtaining data from all movements carried out with the hands,
-                this data is sent to a device, be it a computer or a phone, via
-                bluetooth and processed in order to return the message made in
-                audio and text in any language.
+              Consiste en un par de guantes con sensores, capaces de obtener datos de todos los movimientos realizados con las manos, estos datos son enviados a un dispositivo, ya sea una computadora o un teléfono vía bluetooth y procesarlo ​​con el fin de devolver el mensaje realizado en audio y texto en cualquier idioma.
               </p>
             </div>
           </div>
 
           <div className="row mt-5">
             <div className="col-12 col-md-6">
-              <h2>Process</h2>
+              <h2>Proceso</h2>
               <p>
-                We use artificial intelligence with machine learning techniques
-                and neural networks to train a model capable of recognizing
-                movement patterns and interpreting them as sign language words.
+              Utilizamos inteligencia artificial con técnicas de aprendizaje automático y redes neuronales para entrenar un modelo capaz de reconocer patrones de movimiento e interpretarlos como palabras en lengua de señas.
               </p>
               <p>
-                Focused on simplicity and communication, so that any user has an
-                incredible experience when using our application.
+              Enfocados en la sencillez y la comunicación, para que cualquier usuario tenga una experiencia increíble al utilizar nuestra aplicación.
               </p>
             </div>
             <div className="col-12 col-md-6">
-              <h2>Challenges</h2>
+              <h2>Desafios</h2>
               <ul>
                 <li>
-                  Carry out the investigation of electronic components to obtain
-                  the data.
+                Realizar la investigación de componentes electrónicos para la obtención de los datos.
                 </li>
                 <li className="mt-3">
-                  Contact and better understand the needs of our users with
-                  hearing and speech disabilities.
+                Comprender mejor las necesidades de nuestros usuarios con discapacidad auditiva y del habla.
                 </li>
                 <li className="mt-3">
-                  Identify the necessary technologies and languages ​​that best
-                  suit the needs of the product.
+                Identificar las tecnologías y lenguajes necesarios que mejor se adapten a las necesidades del producto.
                 </li>
               </ul>
             </div>
@@ -119,28 +99,22 @@ export default function SmartGloves() {
 
           <div className="row">
             <div className="col-12 mt-5">
-              <h2>Technologies</h2>
+              <h2>Tecnologías</h2>
               <ul>
                 <li>
-                  <span className="text-bold">Python: </span>Main programming
-                  language.
+                  <span className="text-bold">Python: </span>Principal lenguaje de programación.
                 </li>
                 <li>
-                  <span className="text-bold">Django: </span>Python framework
-                  for server side where an API is offered to query the data.
+                  <span className="text-bold">Django: </span>Framework web de Python para el lado del servidor donde se ofrece una API para consultar los datos.
                 </li>
                 <li>
-                  <span className="text-bold">TensorFlow: </span>Library for
-                  artificial intelligence, used for training and validation of
-                  the neural network.
+                  <span className="text-bold">TensorFlow: </span>Librería para inteligencia artificial, utilizada para entrenamiento y validación de la red neuronal.
                 </li>
                 <li>
-                  <span className="text-bold">Swift: </span>Programming language
-                  for mobile application on apple iOS devices.
+                  <span className="text-bold">Swift: </span>Lenguaje de programación para aplicaciones móviles en dispositivos Apple iOS.
                 </li>
                 <li>
-                  <span className="text-bold">Arduino: </span>It was used to
-                  collect data from the glove sensors.
+                  <span className="text-bold">Arduino: </span>Se utilizó para recopilar datos de los sensores del guante.
                 </li>
               </ul>
             </div>
@@ -182,7 +156,7 @@ export default function SmartGloves() {
 
           <div className="row mt-5">
             <div className="col-12">
-              <h2 style={{ textAlign: "center" }}>Team</h2>
+              <h2 style={{ textAlign: "center" }}>Equipo</h2>
 
               <img
                 src={require("../images/works/smart-gloves/team.png")}
@@ -193,24 +167,6 @@ export default function SmartGloves() {
                   objectFit: "cover",
                 }}
               />
-            </div>
-          </div>
-
-          <div className="row mt-5">
-            <div className="col-12 col-lg-6">
-              <h2>Statistics</h2>
-              <p>
-                A survey carried out by the National Institute of Geography,
-                Statistics and Informatics (INEGI) revealed that in Mexico there
-                are 1 million 795 thousand people with some type of physical or
-                mental disability, of which 15.7% are hearing and 4.9% are of
-                language.
-              </p>
-            </div>
-            <div className="col-12 col-lg-6">
-              <div style={{ height: 300 }}>
-                <MyResponsivePie />
-              </div>
             </div>
           </div>
         </div>

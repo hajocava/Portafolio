@@ -15,8 +15,18 @@
         "image": "besoft/thumblr.png"
     },
     {        
-        "project": "UX & UI Concept Mobile App Design",
-        "link": "trippme",
-        "image": "trippme/thumblr.png"
+        "project": "Propuesta de rebranding para listo.mx",
+        "link": "listo",
+        "image": "listo/thumblr.png"
+    },
+    {
+        "project": "Simulación de flujo de compra de boletos para una aerolinea",
+        "link": "airline",
+        "image": "airline/thumblr.png"
+    },
+    {
+        "project": "Propuesta de diseño de página para deportivo de crossfit",
+        "link": "blackbull",
+        "image": "blackbull/thumblr.png"
     }
 ]
